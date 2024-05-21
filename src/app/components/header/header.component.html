@@ -1,0 +1,41 @@
+<div class="container-fluid bg-white shadow-sm navbar-fixed-top">
+  <nav class="navbar navbar-expand navbar-light px-4">
+    <img src="assets/Predigle-logo.svg" alt="Logo" id="logo" class="ml-3 mr-2" style="height: 40px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto" style="font-weight: 500;">
+        <li class="nav-item" [class.active]="activeLink === 'dashboard'" (click)="setActive('dashboard')">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item" [class.active]="activeLink === 'Controls'" (click)="setActive('Controls')">
+          <a class="nav-link" href="#">Controls</a>
+        </li>
+        <li class="nav-item" [class.active]="activeLink === 'Projects'" (click)="setActive('Projects')">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item" [class.active]="activeLink === 'Reporting'" (click)="setActive('Reporting')">
+          <a class="nav-link" href="#">Reporting</a>
+        </li>
+        <li class="nav-item" [class.active]="activeLink === 'Users'" (click)="setActive('Users')">
+          <a class="nav-link" href="#">Users</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" id="icon-opt">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="assets/search-lg.svg" alt="Search Icon" style="height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="assets/settings.png" alt="Settings Icon" style="height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="assets/bell.png" alt="Notification Icon" style="height: 20px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="assets/profile.png" alt="Profile image" class="rounded-circle me-2"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

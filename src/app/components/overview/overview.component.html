@@ -1,0 +1,99 @@
+<div class="container my-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-start">
+        <div class="px-4 mb-3 mb-lg-0">
+            <h4>Control requests <span class="spanContainer text-dark px-2">41 new request</span></h4>
+            <p>List of all the controls that were requested by the project team</p>
+        </div>
+        <div class="d-flex flex-wrap px-2">
+            <button class="btn btn-outline-secondary d-flex align-items-center mr-2 mb-2 mb-sm-2">
+                <img aria-hidden="true" alt="import" src="assets/upload-cloud-02.svg" class="mr-2 px-2" />
+                Import controls
+            </button>
+            <button class="btn btn-primary d-flex align-items-center ml-2 mb-2 mb-sm-2" style="margin-left:10px;">
+                <img aria-hidden="true" alt="add" src="assets/plus.svg" class="mr-2 px-2" />
+                Add New Control
+            </button>
+        </div>
+    </div> 
+    <hr class="my-1"/>
+    
+    <div class="row justify-content-between py-2" style="padding: 0 2%;">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="btn-group w-100">
+                <button class="btn btn-outline-secondary fw-semibold">View all</button>
+                <button class="btn btn-outline-secondary fw-semibold">Backlog (new requests)</button>
+                <button class="btn btn-outline-secondary fw-semibold">Under review</button>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center">
+                <div class="input-icon-wrapper flex-grow-1 me-2">
+                    <img aria-hidden="true" alt="filter" src="assets/search-lg.svg" class="input-icon" />
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button class="btn btn-outline-light text-dark border-dark d-flex align-items-center" type="button">
+                    <img class="me-2" aria-hidden="true" alt="filter" src="assets/filter-lines.svg" />
+                    Filters
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <hr class="my-1"/>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="px-4">Control name</th>
+                    <th>Type of Request</th>
+                    <th>Priority Level</th>
+                    <th>Requested date</th>
+                    <th>Control Categories</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="px-4">Business and finance</td>
+                    <td><span class="badge badge-custom badge-primary-outline me-1">New</span></td>
+                    <td><span class="badge badge-custom badge-high-outline"><img aria-hidden="true" alt="high" src="assets/arrow-up.svg" />High</span></td>
+                    <td>22 Jan 2024</td>
+                    <td><span class="spanContainer text-dark px-2">Agile</span></td>
+                    <td><span class="badge badge-custom badge-underRev-outline">Under review</span></td>
+                    <td><button class="btn btn-primary" (click)="openPopup()">View</button></td>
+                </tr>
+                <tr>
+                    <td class="px-4">Access Authorization Control</td>
+                    <td><span class="badge badge-custom badge-waiting-outline me-1">Modification</span></td>
+                    <td><span class="badge badge-custom badge-low-outline"><img aria-hidden="true" alt="high" src="assets/arrow-down.png" style="width: 15px; height: 15px;" />Low</span></td>
+                    <td>20 Jan 2024</td>
+                    <td><span class="spanContainer text-dark px-2">Cybersecurity</span></td>
+                    <td><span class="badge badge-custom badge-purple-outline">Pending Review</span></td>
+                    <td><button class="btn btn-primary" (click)="openPopup()">View</button></td>
+                </tr>
+                <tr>
+                    <td class="px-4">Data Encryption Protocol</td>
+                    <td><span class="badge badge-custom badge-primary-outline me-1">New</span></td>
+                    <td><span class="badge badge-custom badge-high-outline"><img aria-hidden="true" alt="high" src="assets/arrow-up.svg" />High</span></td>
+                    <td>24 Jan 2024</td>
+                    <td><span class="spanContainer text-dark px-2">ZeroTrust</span></td>
+                    <td><span class="badge badge-custom badge-high-outline">Approved</span></td>
+                    <td><button class="btn btn-primary" (click)="openPopup()">View</button></td>
+                </tr>
+                <tr>
+                    <td class="px-4">Vulnerability Assessment Procedure</td>
+                    <td><span class="badge badge-custom badge-primary-outline me-1">New</span></td>
+                    <td><span class="badge badge-custom badge-medium-outline"><img aria-hidden="true" alt="high" src="assets/equal.png" style="width: 15px; height: 15px;" />Medium</span></td>
+                    <td>26 Jan 2024</td>
+                    <td><span class="spanContainer text-dark px-2">Cybersecurity</span></td>
+                    <td><span class="badge badge-custom badge-purple-outline">Pending Review</span></td>
+                    <td><button class="btn btn-primary" (click)="openPopup()">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <app-detail-view *ngIf="showPopup" (close)="closePopup()"></app-detail-view>
+</div>

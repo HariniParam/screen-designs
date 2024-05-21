@@ -1,0 +1,132 @@
+<div class="popup-overlay">
+    <div class="popup-container mx-auto p-4 shadow rounded">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-3 px-4">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center align-items-center rounded me-2 p-4 border" style="width: 30px; height: 30px;background-color: white;">
+                    <img aria-hidden="true" src="assets/hash-01.svg">
+                </div>
+                <div class="px-2">
+                    <h2 class="h5">Access Authorization Control</h2>
+                    <p class="mb-0 text-muted">Control request id #EA005</p>
+                </div>
+            </div>
+            <button class="btn btn-link text-white" (click)="closePopup()">
+              <img aria-hidden="true" alt="close" src="assets/Button close X.svg" />
+            </button>
+        </div>
+          
+        <div class="p-2">
+            <div class="container">
+                <div class="card border-0 border-bottom">
+                    <div class="card-body">
+                        <h5 class="card-title">Access Authorization Control</h5>
+                        <span class="card-subtitle p-1 text-muted borderContainer">Cybersecurity</span>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-2 mt-2">
+                                    <span>Control request type</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>Priority Level / Importance Level</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>Status</span>
+                                </div>
+                                <div class="mb-2 mt-2 d-flex">
+                                    <span>Requestor name</span>                          
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-2 mt-2">
+                                    <span class="badge badge-custom badge-primary-outline me-1">New</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span class="badge badge-custom badge-high-outline">
+                                        <img aria-hidden="true" alt="high" src="assets/arrow-up.svg" />High</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span class="badge badge-custom badge-purple-outline me-1">Pending Review</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/avatar.png" alt="Profile image" class="rounded-circle me-2">
+                                        <div>
+                                            <div>Jessica</div>
+                                            <div>Projects XYZ</div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="card border-0 border-bottom">
+                    <div class="card-body">
+                        <h5 class="card-title">Control Details</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-2 mt-2">
+                                    <span>Is this an Entry or Exit control?</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>What Agile category best suits this control?</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>Please indicate the Control Element and all Associated Levels</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-2 mt-2">
+                                    <span>Readiness Check (Entry)</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>Product Backlog Health</span>
+                                </div>
+                                <div class="mb-2 mt-2">
+                                    <span>Have indicated the Control Element as 'ABC' and associated it with Levels A, B, and C in the provided documentation.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card border-0 border-bottom">
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-1 mt-1">
+                                <span class="fw-semibold">Change status / Review</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-1 mt-1">
+                                <select class="p-2 bg-zinc border fw-semibold rounded flex-shrink-0">
+                                    <option selected>Send to Review</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="rejected">Rejected</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="card-title">Notes to Steering committee</h5>
+                    <textarea class="form-control mb-3" rows="3" placeholder="control appears to be best suited for the entire intake process; therefore, it is strongly recommended. Please consider this note for the Steering Committee's review."></textarea>
+                    <div class="row">
+                        <div class="col-6 mb-2">
+                            <button type="button" class="btn btn-secondary w-100 me-md-2">Cancel</button>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <button type="button" class="btn btn-primary w-100">Save changes</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>

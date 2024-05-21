@@ -1,0 +1,88 @@
+.container {
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1% 0;
+  border-radius: 8px;
+}
+
+.spanContainer {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.form-control {
+  padding-left: 35px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.badge-custom {
+  border-radius: 1rem;
+  padding: 0.25em 0.5em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.badge-primary-outline {
+  border-color: #2B50E6;
+  color: #2B50E6;
+  background-color: #ffffff;
+}
+
+.badge-high-outline {
+  border-color: #17B26A;
+  color: #17B26A;
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.badge-underRev-outline {
+  border-color: gray;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.badge-low-outline {
+  border-color: #F04438;
+  color: #F04438;
+  background-color: rgba(128, 0, 0, 0.1);
+}
+
+.badge-medium-outline {
+  border-color: #0B99D5;
+  color: #0B99D5;
+  background-color: rgba(0, 0, 128, 0.1);
+}
+
+.badge-awaiting-outline {
+  border-color: #DC6803;
+  color: #DC6803;
+  background-color: #ffffff;
+}
+
+.badge-waiting-outline {
+  border-color: #0B99D5;
+  color: #0B99D5;
+  background-color: #ffffff;
+}
+
+.badge-purple-outline {
+  border-color: #ba2be6;
+  color: #ba2be6;
+  background-color: #ffffff;
+}

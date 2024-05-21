@@ -1,0 +1,41 @@
+.border-bottom-custom {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.badge-custom{
+  border-radius: 1rem;
+  padding: 0.25em 0.5em;
+  border-width: 1px;
+  border-style: solid;
+}
+.badge-primary-outline {
+  border-color:#2B50E6;
+  color: #2B50E6;
+  background-color: #ffffff;
+}
+
+.badge-high-outline{
+  border-color: #17B26A;
+  color: #17B26A;
+  background-color: rgba(0, 128, 0, 0.1); 
+}
+
+.badge-awaiting-outline{
+  border-color: #DC6803;
+  color: #DC6803;
+  background-color: #ffffff;
+}
+
+.badge-waiting-outline{
+  border-color: #0B99D5;
+  color: #0B99D5;
+  background-color: #ffffff;
+}
+
+.view-details-custom{
+  color: #2B50E6;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
